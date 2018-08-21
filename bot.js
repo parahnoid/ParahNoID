@@ -17,5 +17,23 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'Bang Andi') {
+    	message.reply('Ganteng');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Huko-Chan') {
+    	message.reply('Kawaii');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Nabil') {
+    	message.reply('Khintil');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
